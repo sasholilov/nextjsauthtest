@@ -1,8 +1,6 @@
 import { SignOutButton, SignedIn } from "@clerk/nextjs";
 
-console.log("ste");
-
-export default async function Home() {
+export const Home = async () => {
   return (
     <div>
       <h1>Home</h1>
@@ -11,4 +9,6 @@ export default async function Home() {
       </SignedIn>
     </div>
   );
-}
+};
+
+export default Home;
