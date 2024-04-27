@@ -1,11 +1,14 @@
-import styles from "./page.module.css";
+import { SignOutButton, SignedIn } from "@clerk/nextjs";
 
-export default function Home() {
+console.log("ste");
+
+export default async function Home() {
   return (
-    <main className={styles.main}>
-      <div>
-        <h1>Home</h1>
-      </div>
-    </main>
+    <div>
+      <h1>Home</h1>
+      <SignedIn>
+        <SignOutButton />
+      </SignedIn>
+    </div>
   );
 }
