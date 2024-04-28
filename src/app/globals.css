@@ -1,3 +1,5 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+
 body {
   padding: 0;
   margin: 0;
@@ -27,8 +29,48 @@ body {
   margin: 0 auto;
 }
 
-.dashboard {
+.dashboard-first {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 1rem;
+}
+
+.dashboard-second {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.chart-wrapper {
+  border: 1px solid rgb(199, 199, 199);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.recent-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.recent-container {
+  border: 1px solid rgb(199, 199, 199);
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+.recent-name {
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding-bottom: 0.2rem;
+  padding-top: 0.2rem;
+  margin: 0;
+}
+
+.recent-row-right {
+  font-weight: 500;
 }

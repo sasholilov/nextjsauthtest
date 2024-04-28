@@ -1,3 +1,4 @@
+import { ChartComponent } from "../components/Chart/ChartComponent";
 import { Stat } from "../components/Stat/Stat";
 
 const data = [
@@ -31,7 +32,7 @@ const DashboardPage = async () => {
   return (
     <div className="dashboard-container">
       <h2>Dashboard</h2>
-      <div className="dashboard">
+      <div className="dashboard-first ">
         {data.map((data) => (
           <Stat
             title={data.title}
@@ -40,6 +41,52 @@ const DashboardPage = async () => {
             icon={data.icon}
           />
         ))}
+      </div>
+      <div className="dashboard-second">
+        <div className="chart-wrapper">
+          <ChartComponent />
+        </div>
+        <div className="recent-container">
+          <div>
+            <p className="recent-name">Recent Sales</p>
+            <p className="text-xs">You made 265 sales this month.</p>
+          </div>
+          <div className="recent-row">
+            <div className="recent-row-left">
+              <p className="recent-name">Olivia Martin</p>
+              <p className="text-xs">olivia.martin@email.com</p>
+            </div>
+            <div className="recent-row-right">+$1,999.00</div>
+          </div>
+          <div className="recent-row">
+            <div className="recent-row-left">
+              <p className="recent-name">Olivia Martin</p>
+              <p className="text-xs">olivia.martin@email.com</p>
+            </div>
+            <div className="recent-row-right">+$1,999.00</div>
+          </div>
+          <div className="recent-row">
+            <div className="recent-row-left">
+              <p className="recent-name">Olivia Martin</p>
+              <p className="text-xs">olivia.martin@email.com</p>
+            </div>
+            <div className="recent-row-right">+$1,999.00</div>
+          </div>
+          <div className="recent-row">
+            <div className="recent-row-left">
+              <p className="recent-name">Olivia Martin</p>
+              <p className="text-xs">olivia.martin@email.com</p>
+            </div>
+            <div className="recent-row-right">+$1,999.00</div>
+          </div>
+          <div className="recent-row">
+            <div className="recent-row-left">
+              <p className="recent-name">Sofia Davis</p>
+              <p className="text-xs">sofia.davis@email.com</p>
+            </div>
+            <div className="recent-row-right">+$39.00</div>
+          </div>
+        </div>
       </div>
     </div>
   );
