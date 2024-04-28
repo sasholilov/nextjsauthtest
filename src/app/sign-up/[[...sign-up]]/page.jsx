@@ -1,7 +1,7 @@
 import { SignUp } from "@clerk/nextjs";
 import React from "react";
 
-export const Page = () => {
+const Page = () => {
   return (
     <div>
       <div className="center">
