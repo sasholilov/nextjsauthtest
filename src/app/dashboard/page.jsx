@@ -35,6 +35,7 @@ const DashboardPage = async () => {
       <div className="dashboard-first ">
         {data.map((data) => (
           <Stat
+            key={data.title}
             title={data.title}
             value={data.value}
             description={data.description}
