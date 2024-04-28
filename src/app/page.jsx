@@ -2,11 +2,8 @@ import { SignOutButton, SignedIn } from "@clerk/nextjs";
 
 export const Home = async () => {
   return (
-    <div>
-      <h1>Home</h1>
-      <SignedIn>
-        <SignOutButton />
-      </SignedIn>
+    <div className="center">
+      <h1>Next.js and Clerk</h1>
     </div>
   );
 };

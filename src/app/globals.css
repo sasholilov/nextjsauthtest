@@ -3,3 +3,37 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
+
+header {
+  padding: 20px 20px 20px 20px;
+  background-color: #6384ea;
+
+  color: #2a2a2a;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  align-items: center;
+}
+
+.center {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dashboard-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+header a {
+  color: #2a2a2a;
+  text-decoration: none;
+}
