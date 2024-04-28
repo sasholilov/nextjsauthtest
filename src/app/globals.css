@@ -4,12 +4,6 @@ body {
   box-sizing: border-box;
 }
 
-header {
-  padding: 20px 20px 20px 20px;
-  background-color: #6384ea;
-
-  color: #2a2a2a;
-}
 .container {
   margin: 0 auto;
   max-width: 1440px;
@@ -33,7 +27,8 @@ header {
   margin: 0 auto;
 }
 
-header a {
-  color: #2a2a2a;
-  text-decoration: none;
+.dashboard {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
 }

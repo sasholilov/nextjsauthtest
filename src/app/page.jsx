@@ -1,5 +1,3 @@
-import { SignOutButton, SignedIn } from "@clerk/nextjs";
-
 export const Home = async () => {
   return (
     <div className="center">

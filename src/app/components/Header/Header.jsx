@@ -1,5 +1,5 @@
 import Link from "next/link";
-import "./styles.css";
+import "./header.css";
 import { UserButton } from "@clerk/nextjs";
 import { currentUser } from "@clerk/nextjs/server";
 
