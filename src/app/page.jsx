@@ -1,4 +1,4 @@
-export const Home = async () => {
+export const Home = () => {
   return (
     <div className="center">
       <h1>Next.js and Clerk</h1>
