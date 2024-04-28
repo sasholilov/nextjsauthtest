@@ -3,8 +3,10 @@ import React from "react";
 
 export const Page = () => {
   return (
-    <div className="center">
-      <SignUp />
+    <div>
+      <div className="center">
+        <SignUp />
+      </div>
     </div>
   );
 };
